@@ -37,31 +37,37 @@ export default function SliderCard(){
       flex-direction: column;
     `
     const Div2 = styled.div`
-      justify-content: stretch;
-      width: 1300px;
+      width: 1200px;
       float: left;
+      display: flex;
+      flex-direction: column;
     `
     const News = {
-        backgroundColor: '#000',
-        color: 'orange',
+        //width:'400px',
+        marginLeft:'-250px',
+        marginBottom:'-220px'
+    }
+
+    const Service = {
         width:'400px',
-        marginLeft:'-500px',
-        marginTop:'20px',
-        position: 'relative'
+        marginLeft:'1400px',
+        marginBottom:'-220px'
     }
 
     return(
         <>
             <Div1>
                 <div style={News}>
-
+                    <h3 style={{marginTop:'10px', fontSize:'larges'}}>틸론의 새로운 <br /> 소식을 접해보세요.</h3>
+                    <h1 style={{marginTop:'20px', marginBottom:'50px', fontSize:'xx-large', fontWeight:'700'}}>오늘의<br /> 틸론뉴스</h1>
+                    <button style={{backgroundColor:'#dcdcdc', color:'#aaaaaa', padding:'10px', borderRadius:'7px', borderColor:'#bebebe'}}>뉴스페이지 바로가기</button>
                 </div>
                 <Slider {...settings}>
                     <Div>
                         <img src={card1} width={250} alt="card1" />
                     </Div>
                     <Div>
-                        <img src={card2} width={250} alt="card2" />
+                        <img src={card3} width={250} alt="card3" />
                     </Div>
                     <Div>
                         <img src={card3} width={250} alt="card3" />
@@ -73,13 +79,17 @@ export default function SliderCard(){
                         <img src={card5} width={250} alt="card5" />
                     </Div>
                     <Div>
-                        <img src={card6} width={250} alt="card6" />
+                        <img src={card5} width={250} alt="card6" />
                     </Div>
                 </Slider>
-
             </Div1>
 
         <Div2>
+            <div style={Service}>
+                <h3 style={{marginTop:'10px', fontSize:'larges'}}>틸론만의 제품을 <br /> 소개해드릴게요.</h3>
+                <h1 style={{marginTop:'20px', marginBottom:'50px', fontSize:'xx-large', fontWeight:'700'}}>제품 및 서비스</h1>
+                <button style={{backgroundColor:'black', color:'white', padding:'10px', borderRadius:'7px'}}> 제품 및 서비스 바로가기</button>
+            </div>
             <Slider {...settings}>
                 <Div>
                     <img src={card1} width={250} alt="card1" />
@@ -100,7 +110,6 @@ export default function SliderCard(){
                     <img src={card3} width={250} alt="card6" />
                 </Div>
             </Slider>
-            <h2>test2</h2>
         </Div2>
 
         </>
