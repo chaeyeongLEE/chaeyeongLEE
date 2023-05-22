@@ -13,10 +13,10 @@ import styled from "styled-components";
 export default function SliderCard(){
 
     const settings = {
-        dots: true, //슬라이드 아래 점 보이게
+        dots: false, //슬라이드 아래 점 보이게
         infinite: true, //무한으로 반복
         speed: 500,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000, //넘어가는 속도
         slidesToShow: 4, //몇 장씩 보일지?
         slidesToScroll: 1, //1장씩 뒤로 넘어가게
@@ -31,10 +31,10 @@ export default function SliderCard(){
     const Div1 = styled.div`
       width: 1300px;
       margin-bottom: 100px;
-      margin-top: 50px;
       float: right;
       display: flex;
       flex-direction: column;
+      margin-top: 50px;
     `
     const Div2 = styled.div`
       width: 1200px;
@@ -50,7 +50,7 @@ export default function SliderCard(){
 
     const Service = {
         width:'400px',
-        marginLeft:'1400px',
+        marginLeft:'1240px',
         marginBottom:'-220px'
     }
 
