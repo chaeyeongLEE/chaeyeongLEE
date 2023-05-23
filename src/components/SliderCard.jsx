@@ -22,6 +22,44 @@ export default function SliderCard(){
         slidesToScroll: 1, //1장씩 뒤로 넘어가게
         centerMode: true,
         centerPadding: "0px",
+        responsive:[
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     const Div = styled.div`
@@ -58,7 +96,7 @@ export default function SliderCard(){
         <>
             <Div1>
                 <div style={News}>
-                    <h3 style={{marginTop:'10px', fontSize:'larges'}}>틸론의 새로운 <br /> 소식을 접해보세요.</h3>
+                    <h3 style={{marginTop:'10px', fontSize:'larges', color:'#6e6e6e'}}>틸론의 새로운 <br /> 소식을 접해보세요.</h3>
                     <h1 style={{marginTop:'20px', marginBottom:'50px', fontSize:'xx-large', fontWeight:'700'}}>오늘의<br /> 틸론뉴스</h1>
                     <button style={{backgroundColor:'#dcdcdc', color:'#aaaaaa', padding:'10px', borderRadius:'7px', borderColor:'#bebebe'}}>뉴스페이지 바로가기</button>
                 </div>
@@ -86,7 +124,7 @@ export default function SliderCard(){
 
         <Div2>
             <div style={Service}>
-                <h3 style={{marginTop:'10px', fontSize:'larges'}}>틸론만의 제품을 <br /> 소개해드릴게요.</h3>
+                <h3 style={{marginTop:'10px', fontSize:'larges', color:'#6e6e6e'}}>틸론만의 제품을 <br /> 소개해드릴게요.</h3>
                 <h1 style={{marginTop:'20px', marginBottom:'50px', fontSize:'xx-large', fontWeight:'700'}}>제품 및 서비스</h1>
                 <button style={{backgroundColor:'black', color:'white', padding:'10px', borderRadius:'7px'}}> 제품 및 서비스 바로가기</button>
             </div>
