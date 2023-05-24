@@ -63,8 +63,6 @@ export default function SliderCard(){
     };
 
     const Div = styled.div`
-      //display:flex;
-      //margin-right: -150px;
     `;
     const Div1 = styled.div`
       width: 1300px;
@@ -79,6 +77,7 @@ export default function SliderCard(){
       float: left;
       display: flex;
       flex-direction: column;
+
     `
     const News = {
         //width:'400px',
@@ -121,7 +120,6 @@ export default function SliderCard(){
                     </Div>
                 </Slider>
             </Div1>
-
         <Div2>
             <div style={Service}>
                 <h3 style={{marginTop:'10px', fontSize:'larges', color:'#6e6e6e'}}>틸론만의 제품을 <br /> 소개해드릴게요.</h3>

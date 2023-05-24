@@ -20,11 +20,12 @@ import letter3 from "../letter3.png";
 import letter4 from "../letter4.png";
 import dstMonitor from "../dstMonitor.png";
 import black from "../blackback.png";
-import black3 from "../blackback3.png";
 import Laptop from "../Laptop.png";
-
-import * as url from "url";
-
+import CenterFace1 from "../CenterFace1.png";
+import CenterFace2 from "../CenterFace2.png";
+import CenterFace3 from "../CenterFace3.png";
+import cvimg from "../cvimg.png";
+import solutionImg from "../Solution.png";
 export default function Home(){
     const Div0 = styled.div`
       display: grid;
@@ -46,8 +47,7 @@ export default function Home(){
     const Div2=styled.div`
       grid-column: 1/4;
       grid-row: 2;
-      position: relative;
-
+      position: static;
     `;
     // 제품소개해드릴게요
     const Div3 = styled.div`
@@ -95,18 +95,126 @@ export default function Home(){
     const Div7 = styled.div`
       display: grid;
       position: relative;
+      margin-left: -200px;
       grid-row: 6;
       grid-column:1/4;
       background-color: black;
       //height: 970px;
       justify-content: center;
       place-items: center;
-      padding-top: 300px;
+      padding-top: 30rem;
       color: white;
-      background-image: url('/src/Laptop.png');
-      background-position: calc(50% + 22vw) 0;
-      background-size: calc(300px + 40vw) auto;
+      
+      .LaptopImg{
+        position: absolute;
+        width: 30%;
+        height: 10%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
     `;
+
+    const Div8 = styled.div`
+      display: grid;
+      position: relative;
+      //margin-left: -465px;
+      grid-row: 7;
+      grid-column:1/4;
+      background-color: black;
+      //height: 970px;
+      place-items: center;
+      padding-top: 35rem;
+      color: white;
+      z-index: -100;
+      .CenterFace {
+        margin-right: 50px;
+      }
+      h1 {
+        font-size: 4rem;
+        margin-top: 50px;
+      }
+      .CFmessage1{
+        color: #96DDFE;
+        line-height: 24px;
+        font-size: 1.3rem;
+        margin-top: 30px;
+                
+      }
+      .CFmessage2 {
+        margin-top: 3rem;
+        line-height: 35px;
+        font-size: 1.5rem;
+      }`;
+
+    const Div9 = styled.div`
+      display: grid;
+      position: relative;
+      //margin-left: -465px;
+      grid-row: 8;
+      grid-column:1/4;
+      z-index: -100;
+      place-items: center;
+  
+      .CFImg{
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(auto-fill, 1fr);
+        z-index: 2;
+      }
+
+      .CenterVerse {
+        margin-right: 50px;
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin-top: 50px;
+      }
+
+      .CVmessage1 {
+        color: #96DDFE;
+        line-height: 24px;
+        font-size: 1.3rem;
+        margin-top: 30px;
+
+      }
+
+      .CVmessage2 {
+        margin-top: 3rem;
+        line-height: 35px;
+        font-size: 1.5rem;
+      }
+      
+    \` ;
+    `
+    const Div10 = styled.div`
+      display: grid;
+      position: relative;
+      margin-left: 200px;
+      grid-row: 9;
+      grid-column:1/4;
+      z-index: -100;
+      place-items: center;
+      
+      .CenterFace {
+        margin-right: 50px;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-top: 50px;
+        color: #007AFF;
+      }
+
+      .ATmessage {
+        margin-top: 5rem;
+        line-height: 35px;
+        font-size: 1.5rem;
+      }
+      
+    \` ;
+    `
     //상담이 가능해요. FAQ
     const Section2 = styled.section`
       display: grid;
@@ -123,15 +231,14 @@ export default function Home(){
       p {
         width: 250px;
         grid-column: 2/3;
-      }
-
+      };
       //p:nth-child(1) {
       //  grid-row: 1;
       //  font-weight: 800;
       //  margin-bottom: 15px;
       //}
-      
-    `;
+
+`;
 
     //아이콘 리스트
     const Section3 = styled.section`
@@ -220,7 +327,52 @@ export default function Home(){
     };
     
     //`;
-
+    const Section5 = styled.section`
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
+      align-items: center;
+      margin-right: 6.25rem;   
+      z-index: 10;
+      .elcloud {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        font-size: 5rem;
+        margin-right: 300px;
+        width: fit-content;
+      }
+      .elText1{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 3.2rem;
+      }
+      .elText2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 1rem;
+        margin-top: 1.6rem;
+        line-height: 24px;
+      }
+      .elText3{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7rem;
+        margin-right: 9.4rem;
+        
+        h1{
+          color: #96DDFE;
+          font-size: 1.8rem;
+        }
+        
+        h5{
+          margin-top: 1rem;
+          line-height: 26px;
+        }
+      }
+    `
     //아이콘 목록
     const icons = [
         {
@@ -361,23 +513,97 @@ export default function Home(){
                 </div>
 
                 <div className="DstIntro" style={{marginTop:'150px'}}>
-                    <p style={{fontWeight:'800',fontSize:'1.5rem', marginBottom:'1.2rem',marginLeft:'12rem' }}>Dstation.</p>
-                    <p style={{fontSize:'1rem', marginBottom:'0.75rem' }}> 오지를 탐험할 때는 튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된<br />
-                    튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된 튼튼한 신발만큼 <br />
-                    튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된
+                    <p style={{fontWeight:'800',fontSize:'1.5rem', marginBottom:'1.2rem',marginLeft:'9.7rem' }}>Dstation.</p>
+                    <p style={{fontSize:'1rem', marginBottom:'0.75rem', lineHeight:'23px'}}> 오지를 탐험할 때는 튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된<br />
+                        　튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된 튼튼한 신발만큼 <br />
+                        　　　　　튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된
                     </p>
-                    <button type="button" style={{border:'none', backgroundColor:'#F8F8F8', color:'#2997FF', marginLeft:'11.5rem', fontWeight:'700'}}> Dstation 바로가기  > </button>
+                    <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', marginLeft:'9.1rem', fontWeight:'700'}}> Dstation 바로가기  > </button>
                 </div>
 
-                <div className="DstImg" style={{ marginTop: '-60px', position: 'relative' }}>
+                <div className="DstImg" style={{ marginTop: '150px', position: 'static' }}>
                     <img src={dstMonitor} alt="Dstation Monitor" style={{ width: '70%', height: 'auto', marginLeft: '280px', zIndex: '10', position: 'relative'}} />
-                    <img src={black3} alt="black backgroundimg" style={{ marginTop: '-1000px', zIndex: '-100', position: 'relative', paddingBottom:'100px', width:'100%', height:'200px'}} />
-                    <img src={black3} alt="black backgroundimg" style={{ marginTop: '-1000px', zIndex: '-100', position: 'relative', paddingBottom:'120px', width:'100%', height:'200px'}} />
+                    <img src={black} alt="black backgroundimg" style={{ marginTop: '-500px', zIndex: '-100', position: 'relative', paddingBottom:'200px', width:'100%', height:'200px', backgroundColor:'black'}} />
                 </div>
             </Div6>
             <Div7>
-                Elcloud
+                <Section5>
+                    <div className="elcloud">
+                        <h1>elcloud.</h1>
+                    </div>
+                    <div className="elText1">
+                        <h1>견고한 이상의 <br /> 견고함.</h1>
+                    </div>
+                    <div className="elText2">
+                        <h1>아름다운 전면 화면 상시표시형 디스플레이를 제작하는 데 <br /> 이 디스플레이는 견고하기까지 합니다. 두꺼운 앞면...</h1>
+                        <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> elcloud 바로가기  > </button>
+                        <br />
+                        <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> Google Play 방문하기 > </button>
+                        <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', marginLeft:'4.5rem', fontWeight:'700'}}> App Store 방문하기 > </button>
+                    </div>
+                    <div className="elText3">
+                        <div>
+                            <h1>깨짐 방지</h1>
+                            <h5>강력한 내구성을 <br /> 고려한 디자인</h5>
+                        </div>
+                        <div>
+                            <h1>깨짐 방지</h1>
+                            <h5>강력한 내구성을 <br /> 고려한 디자인</h5>
+                        </div>
+                        <div>
+                            <h1>깨짐 방지</h1>
+                            <h5>강력한 내구성을 <br /> 고려한 디자인</h5>
+                        </div>
+                    </div>
+
+                </Section5>
+                <div className="LaptopImg">
+                    <img src={Laptop} alt="backgroundImg" />
+                </div>
             </Div7>
+            <Div8>
+                <div className="CenterFace">
+                    <h1>CenterFace</h1>
+                    <p className="CFmessage1">VDI를 위한 메신저 기반 협업 플랫폼</p> <br />
+                    <p className="CFmessage2">CenterFace는 VDI 환경에서의 업무에 특화된 메신저 기반 협업 플랫폼입니다. <br />
+                        VDI의 망 분리를 통한 보안 기능과 메신저 그룹 암호화 정책으로 안전한 커뮤니케이션을  <br />
+                        제공하여 최상의 업무환경을 제공합니다. 언제, 어디서나, VDI 환경에서 유연한 협업  <br />
+                        환경을 제공함과 동시에 쉽고 빠른 업무 공유와 원클릭 화상회의 환경을 만나보세요.</p> <br />
+                    <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> CenterFace 소개서 다운로드 > </button>
+
+                </div>
+            </Div8>
+            <Div9>
+                <div className="CFImg">
+                    <img src={CenterFace1} alt="bCenterFace1Img" />
+                    <img src={CenterFace2} alt="bCenterFace1Img" />
+                    <img src={CenterFace3} alt="bCenterFace1Img" />
+                </div>
+                <div className="CenterVerse">
+                    <h1>CenterVerse</h1>
+                    <p className="CVmessage1">One Source, Multi-Use 메타버스 플랫폼</p> <br />
+                    <p className="CVmessage2">메타버스 안에서 행정/의료/금융/국방/교육/미디어 등 현실 세계의 풀브라우징을 제공합니다.<br />
+                        CenterVerse는 보안성이 강화된 업무 환경을 제공하고, 현실의 소프트웨어를 수정없이그대로 One Source,<br />
+                        Multi-Use 형태로 제공되어 현실 세계의 모든 디지털 생활과 업무를메타버스 안에서 경험할 수 있습니다.<br />
+                        지금 CenterVerse와 함께 하이퍼워크를 경험해보세요.</p>
+                    <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> 시연 영상 보러가기 > </button>
+                   <br />
+                    <img src={cvimg} alt="centerverseimg" style={{marginTop:'80px'}}/>
+                </div>
+            </Div9>
+            <Div10>
+                <div className="ABOUT TILON">
+                    <h1>ABOUT TILON</h1>
+                    <p className="ATmessage">“Your dream starts here” <br />
+                        너무 사소해서 땀 흘릴만한 가치가 없는 일이란 존재하지 않으며, 실현되기를 바라기엔 너무 큰 꿈이라는 것도 존재하지 않는다. <br />
+                        Beyond the SmartWork To the HyperWork 틸론은 클라우드 컴퓨팅 관련 다수의 특허 및 원천기술을 기반으로 <br />
+                        지난 20여 년간 VDI/DaaS 기술의 길라잡이 역할을 하며 클라우드 PC 시장을 선도하고 있습니다. <br />
+                        틸론은 현재의 스마트워크 시대를 넘어 Hyper Connection을 제공하는 ‘하이퍼워크’시대 개척에 앞장서겠습니다.</p>
+                    <br />
+                    <img src={solutionImg} alt="centerverseimg" style={{marginTop:'20rem'}}/>
+                </div>
+            </Div10>
+
         </Div0>
     );
 }
