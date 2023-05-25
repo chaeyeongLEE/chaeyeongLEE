@@ -3,6 +3,8 @@ import main2Img from "../main2Img.jpg";
 import styled from "styled-components";
 
 import SliderCard from "./SliderCard";
+import Footers from "./Footers";
+
 import DstImg from "../dstation.png";
 import EstImg from "../Estation.png";
 import IstImg from "../iStation.png";
@@ -26,11 +28,12 @@ import CenterFace2 from "../CenterFace2.png";
 import CenterFace3 from "../CenterFace3.png";
 import cvimg from "../cvimg.png";
 import solutionImg from "../Solution.png";
+import video from '../video.png';
 export default function Home(){
     const Div0 = styled.div`
       display: grid;
       grid-template-columns: repeat(3,1fr);
-      grid-auto-rows: minmax(100px, auto);
+      grid-auto-rows: minmax(6.25rem, auto);
       position: relative;
     `;
 
@@ -55,14 +58,14 @@ export default function Home(){
       grid-column: 3;
       grid-row: 3 ;
       margin-top: 7rem;
-      margin-left: -50px;
+      margin-left: -3.125rem;
     `;
     const Div4=styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr; // 2번 열부터 4번 열까지
       grid-row: 3; 
       grid-column: 2;
-      margin-left: 80px;
+      margin-left: 5rem;
       position: relative;
     `;
     const Div5=styled.div`
@@ -71,10 +74,10 @@ export default function Home(){
       grid-column: 2; //카드뉴스가 위치하는 자리
       grid-gap: 3rem;
       position: relative;
-      margin-left: 30px;
-      margin-top: 50px;
+      margin-left: 1.875rem;
+      margin-top: 3.125rem;
       img {
-        width: 250px; /* 이미지의 너비 설정 */
+        width: 15.625rem; 
         height: auto;
       }
     `;
@@ -86,8 +89,8 @@ export default function Home(){
       grid-column:1/4;
       height: 970px;
       //grid-column: 2;
-      margin-top: 50px;
-      padding-top: 100px;
+      margin-top: 3.125rem;
+      padding-top: 6.25rem;
       justify-content: center;
       place-items: center;
       z-index: 1; // z-index 속성 추가
@@ -95,11 +98,10 @@ export default function Home(){
     const Div7 = styled.div`
       display: grid;
       position: relative;
-      margin-left: -200px;
+      margin-left: -12.5rem;
       grid-row: 6;
       grid-column:1/4;
       background-color: black;
-      //height: 970px;
       justify-content: center;
       place-items: center;
       padding-top: 30rem;
@@ -107,10 +109,9 @@ export default function Home(){
       
       .LaptopImg{
         position: absolute;
-        width: 30%;
-        height: 10%;
-        object-fit: cover;
+        object-fit: fill;
         z-index: 0;
+        
       }
 
     `;
@@ -118,70 +119,78 @@ export default function Home(){
     const Div8 = styled.div`
       display: grid;
       position: relative;
-      //margin-left: -465px;
       grid-row: 7;
       grid-column:1/4;
       background-color: black;
-      //height: 970px;
+      //height: 970;
       place-items: center;
       padding-top: 35rem;
+      padding-bottom: 5rem;
       color: white;
       z-index: -100;
+     
       .CenterFace {
-        margin-right: 50px;
+        margin-right: 12rem;
       }
       h1 {
         font-size: 4rem;
-        margin-top: 50px;
+        margin-top: 3.125rem;
       }
       .CFmessage1{
         color: #96DDFE;
-        line-height: 24px;
+        line-height: 1.5rem;
         font-size: 1.3rem;
-        margin-top: 30px;
+        margin-top: 1.875rem;
                 
       }
       .CFmessage2 {
         margin-top: 3rem;
-        line-height: 35px;
+        line-height: 2.188rem;
         font-size: 1.5rem;
       }`;
 
     const Div9 = styled.div`
       display: grid;
       position: relative;
-      //margin-left: -465px;
       grid-row: 8;
       grid-column:1/4;
       z-index: -100;
       place-items: center;
   
       .CFImg{
-        grid-template-rows: repeat(auto-fit, 1fr);
-        grid-template-columns: repeat(auto-fill, 1fr);
+        //grid-template-rows: repeat(auto-fit, 1fr);
+        //grid-template-columns: repeat(auto-fill, 1fr);
         z-index: 2;
+        position: absolute;
+        object-fit: fill;
+        margin-top: -65.5rem;
+        margin-right: 5rem;
       }
 
       .CenterVerse {
-        margin-right: 50px;
+        margin-left: 19.688rem;
+        margin-top: 30rem;
       }
 
       h1 {
         font-size: 4rem;
-        margin-top: 50px;
+        margin-top: 3.125rem;
+        color: #5238D1;
+        font-weight: 700;
       }
 
       .CVmessage1 {
         color: #96DDFE;
-        line-height: 24px;
+        line-height: 1.5rem;
         font-size: 1.3rem;
-        margin-top: 30px;
+        font-weight: 500;
+        margin-top:1.875rem;
 
       }
 
       .CVmessage2 {
         margin-top: 3rem;
-        line-height: 35px;
+        line-height: 2.188rem;
         font-size: 1.5rem;
       }
       
@@ -190,31 +199,41 @@ export default function Home(){
     const Div10 = styled.div`
       display: grid;
       position: relative;
-      margin-left: 200px;
+      margin-left: 13.125rem;
       grid-row: 9;
       grid-column:1/4;
       z-index: -100;
       place-items: center;
       
-      .CenterFace {
-        margin-right: 50px;
+      .ABOUTTILON {
+        margin-left: 18rem;
+        margin-top: 15rem;
       }
 
       h1 {
         font-size: 4rem;
         font-weight: 700;
-        margin-top: 50px;
+        margin-top: 3.125rem;
         color: #007AFF;
       }
 
       .ATmessage {
         margin-top: 5rem;
-        line-height: 35px;
+        line-height: 2.188rem;
         font-size: 1.5rem;
       }
       
     \` ;
     `
+
+    const Div11 = styled.div`
+      display: grid;
+      position: relative;
+      grid-row: 10;
+      grid-column:1/4;
+      z-index: -100;
+      `;
+
     //상담이 가능해요. FAQ
     const Section2 = styled.section`
       display: grid;
@@ -222,22 +241,15 @@ export default function Home(){
       grid-column: 3 span1;
       grid-template-rows: repeat(auto-fill, 1fr 2fr);
       grid-template-columns: repeat(1, 1fr 2fr);
-      margin-top: 125px;
+      margin-top: 7.813rem;
       width: 300px;
       height: 200px;
       grid-gap: 13%;
-      margin-left: 37px;
-
+      margin-left: 2.313rem;
       p {
-        width: 250px;
+        width: 253px;
         grid-column: 2/3;
       };
-      //p:nth-child(1) {
-      //  grid-row: 1;
-      //  font-weight: 800;
-      //  margin-bottom: 15px;
-      //}
-
 `;
 
     //아이콘 리스트
@@ -245,7 +257,7 @@ export default function Home(){
       display: grid;
       grid-column: 3/4;
       grid-row: 4;
-      height: 210px;
+      height:210px;
       margin-left: -3rem;
       justify-items: stretch;
       display: flex;
@@ -259,19 +271,16 @@ export default function Home(){
         width: 98px;
       }
 
-      .name {
-        margin-top: 30px; /* 이름과 이미지 사이의 간격을 조절 */
-      }
     `;
     const Section4 = styled.section`
       display: grid;
       grid-template-rows: repeat(auto-fill, 1fr);
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
       align-items: center;
       .newsheader1 {
         grid-column: 1/2;
         grid-row: 1;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
 
       .newsimg1 {
@@ -285,8 +294,8 @@ export default function Home(){
       .newsheader2 {
         grid-column: 1/2;
         grid-row: 3;
-        margin-top: 60px;
-        margin-bottom: 20px;
+        margin-top: 3.75rem;
+        margin-bottom: 1.25rem;
       }
       .newsimg2 {
         grid-column: 1/2;
@@ -299,8 +308,8 @@ export default function Home(){
       .newsheader3 {
         grid-column: 1/2;
         grid-row: 5;
-        margin-top: 60px;
-        margin-bottom: 20px;
+        margin-top: 3.75rem;
+        margin-bottom: 1.25rem;
       }
       .newsimg3 {
         grid-column: 1/2;
@@ -313,8 +322,8 @@ export default function Home(){
       .newsheader4 {
         grid-column: 1/2;
         grid-row: 7;
-        margin-top: 60px;
-        margin-bottom: 20px;
+        margin-top: 3.75rem;
+        margin-bottom: 1.25rem;
       }
       .newsimg4 {
         grid-column: 1/2;
@@ -338,7 +347,7 @@ export default function Home(){
         grid-column: 1 / span 2;
         grid-row: 1;
         font-size: 5rem;
-        margin-right: 300px;
+        margin-right: 18.75rem;
         width: fit-content;
       }
       .elText1{
@@ -351,7 +360,7 @@ export default function Home(){
         grid-row: 2/3;
         font-size: 1rem;
         margin-top: 1.6rem;
-        line-height: 24px;
+        line-height: 1.5rem;
       }
       .elText3{
         grid-column: 1/3;
@@ -369,7 +378,7 @@ export default function Home(){
         
         h5{
           margin-top: 1rem;
-          line-height: 26px;
+          line-height: 1.625rem;
         }
       }
     `
@@ -419,7 +428,7 @@ export default function Home(){
     const iconList = icons.map((el) => (
         <div key={el.id}>
             <img src={el.image} alt={el.name} />
-            <div style={{marginRight:'32px', marginTop:'15px', fontWeight:'600', fontSize:'small'}}>{el.name}</div>
+            <div style={{marginRight:'2rem', marginTop:'0.938rem', fontWeight:'600', fontSize:'small'}}>{el.name}</div>
         </div>
     ));
 
@@ -439,11 +448,11 @@ export default function Home(){
                 </Div3>
                 <Section2 className="message2">
                     <img src={call} alt="상담" style={{gridRow:'1/3', gridColumn:'1/2'}} />
-                    <p style={{fontWeight:'700'}}> 1:1상담이 가능해요. 언제든 물어보세요</p> <p style={{color:'#0066CC', marginTop:'-10px'}}> 1:1 온라인 문의 무엇이든 물어보세요 </p>
+                    <p style={{fontWeight:'700'}}> 1:1상담이 가능해요. 언제든 물어보세요</p> <p style={{color:'#0066CC', marginTop:'-0.625rem'}}> 1:1 온라인 문의 무엇이든 물어보세요 </p>
                     <img src={smile} alt="상담" style={{gridRow:'3/5', gridColumn:'1/2'}}/>
-                    <p style={{fontWeight:'700'}}> 모든 질문에 친절히 답해드립니다 </p> <p style={{color:'#0066CC', marginTop:'-10px'}}> FAQ </p>
+                    <p style={{fontWeight:'700'}}> 모든 질문에 친절히 답해드립니다 </p> <p style={{color:'#0066CC', marginTop:'-0.625rem'}}> FAQ </p>
                     <img src={email} alt="상담" style={{gridRow:'5/7', gridColumn:'1/2'}}/>
-                    <p style={{fontWeight:'700'}}> 틸론과 함께 여러분의 꿈을 실현하세요!</p> <p style={{color:'#0066CC', marginTop:'-10px'}}> Apply </p>
+                    <p style={{fontWeight:'700'}}> 틸론과 함께 여러분의 꿈을 실현하세요!</p> <p style={{color:'#0066CC', marginTop:'-0.625rem'}}> Apply </p>
                 </Section2>
                 <Section3 className="items">
                     {iconList}
@@ -512,18 +521,18 @@ export default function Home(){
                     <p style={{fontWeight:'800',fontSize:'1.8rem', marginLeft:'8.3rem'}}>소개합니다.</p>
                 </div>
 
-                <div className="DstIntro" style={{marginTop:'150px'}}>
+                <div className="DstIntro" style={{marginTop:'9.375rem'}}>
                     <p style={{fontWeight:'800',fontSize:'1.5rem', marginBottom:'1.2rem',marginLeft:'9.7rem' }}>Dstation.</p>
-                    <p style={{fontSize:'1rem', marginBottom:'0.75rem', lineHeight:'23px'}}> 오지를 탐험할 때는 튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된<br />
+                    <p style={{fontSize:'1rem', marginBottom:'0.75rem', lineHeight:'1.438rem'}}> 오지를 탐험할 때는 튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된<br />
                         　튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된 튼튼한 신발만큼 <br />
                         　　　　　튼튼한 신발만큼 디자인된 '나침반'앱에 탑재된
                     </p>
                     <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', marginLeft:'9.1rem', fontWeight:'700'}}> Dstation 바로가기  > </button>
                 </div>
 
-                <div className="DstImg" style={{ marginTop: '150px', position: 'static' }}>
-                    <img src={dstMonitor} alt="Dstation Monitor" style={{ width: '70%', height: 'auto', marginLeft: '280px', zIndex: '10', position: 'relative'}} />
-                    <img src={black} alt="black backgroundimg" style={{ marginTop: '-500px', zIndex: '-100', position: 'relative', paddingBottom:'200px', width:'100%', height:'200px', backgroundColor:'black'}} />
+                <div className="DstImg" style={{ marginTop: '9.375rem', position: 'static' }}>
+                    <img src={dstMonitor} alt="Dstation Monitor" style={{ width: '70%', height: 'auto', marginLeft: '17.5rem', zIndex: '10', position: 'relative'}} />0
+                    <img src={black} alt="black backgroundimg" style={{ marginTop: '-31.25rem', zIndex: '-100', position: 'relative', paddingBottom:'12.5rem', width:'100%', height:'200px', backgroundColor:'black'}} />
                 </div>
             </Div6>
             <Div7>
@@ -558,7 +567,7 @@ export default function Home(){
 
                 </Section5>
                 <div className="LaptopImg">
-                    <img src={Laptop} alt="backgroundImg" />
+                    <img src={Laptop} alt="backgroundImg" style={{width:'60%',marginLeft:'55rem',marginTop:'57rem'}} />
                 </div>
             </Div7>
             <Div8>
@@ -570,29 +579,29 @@ export default function Home(){
                         제공하여 최상의 업무환경을 제공합니다. 언제, 어디서나, VDI 환경에서 유연한 협업  <br />
                         환경을 제공함과 동시에 쉽고 빠른 업무 공유와 원클릭 화상회의 환경을 만나보세요.</p> <br />
                     <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> CenterFace 소개서 다운로드 > </button>
-
                 </div>
             </Div8>
             <Div9>
-                <div className="CFImg">
-                    <img src={CenterFace1} alt="bCenterFace1Img" />
-                    <img src={CenterFace2} alt="bCenterFace1Img" />
+                <div className="CFImg" >
+                    <img src={CenterFace1} alt="bCenterFace1Img" style={{ marginRight: '2.5rem' }} />
+                    <img src={CenterFace2} alt="bCenterFace1Img" style={{ marginRight: '2.5rem' }} />
                     <img src={CenterFace3} alt="bCenterFace1Img" />
                 </div>
                 <div className="CenterVerse">
                     <h1>CenterVerse</h1>
-                    <p className="CVmessage1">One Source, Multi-Use 메타버스 플랫폼</p> <br />
+                    <p className="CVmessage1" style={{color:'#5238D1'}}>One Source, Multi-Use 메타버스 플랫폼</p> <br />
                     <p className="CVmessage2">메타버스 안에서 행정/의료/금융/국방/교육/미디어 등 현실 세계의 풀브라우징을 제공합니다.<br />
                         CenterVerse는 보안성이 강화된 업무 환경을 제공하고, 현실의 소프트웨어를 수정없이그대로 One Source,<br />
                         Multi-Use 형태로 제공되어 현실 세계의 모든 디지털 생활과 업무를메타버스 안에서 경험할 수 있습니다.<br />
                         지금 CenterVerse와 함께 하이퍼워크를 경험해보세요.</p>
-                    <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> 시연 영상 보러가기 > </button>
-                   <br />
-                    <img src={cvimg} alt="centerverseimg" style={{marginTop:'80px'}}/>
+                    <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> 시연 영상 보러가기  </button>
+                    <img src={video} alt="videoicon" style={{marginBottom: '-0.5rem'}}/>
+                    <br />
+                    <img src={cvimg} alt="centerverseimg" style={{marginTop:'5rem', width:'82%'}}/>
                 </div>
             </Div9>
             <Div10>
-                <div className="ABOUT TILON">
+                <div className="ABOUTTILON" style={{position:'static'}}>
                     <h1>ABOUT TILON</h1>
                     <p className="ATmessage">“Your dream starts here” <br />
                         너무 사소해서 땀 흘릴만한 가치가 없는 일이란 존재하지 않으며, 실현되기를 바라기엔 너무 큰 꿈이라는 것도 존재하지 않는다. <br />
@@ -600,10 +609,12 @@ export default function Home(){
                         지난 20여 년간 VDI/DaaS 기술의 길라잡이 역할을 하며 클라우드 PC 시장을 선도하고 있습니다. <br />
                         틸론은 현재의 스마트워크 시대를 넘어 Hyper Connection을 제공하는 ‘하이퍼워크’시대 개척에 앞장서겠습니다.</p>
                     <br />
-                    <img src={solutionImg} alt="centerverseimg" style={{marginTop:'20rem'}}/>
+                    <img src={solutionImg} alt="centerverseimg" style={{marginTop:'9rem', width:'80%' }}/>
                 </div>
             </Div10>
-
+            <Div11>
+                <Footers />
+            </Div11>
         </Div0>
     );
 }

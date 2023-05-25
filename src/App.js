@@ -1,7 +1,6 @@
 import './App.css';
 import Header from "./components/Header";
 import Home2 from "./components/Home2";
-import Home from "./components/Home";
 
 import SliderCard from "./components/SliderCard";
 

@@ -1,19 +1,33 @@
 import React, {Component} from 'react';
 import styled from "styled-components";
-import TilonImg from '../Tilon.png'
+import TilonImg from '../Tilon.png';
+import viewday from '../view_day.png';
 export default function Header(){
     const Nav = styled.nav`
       display: grid;
+      grid-template-rows: repeat(1,1fr);
+      grid-template-columns:  repeat(2,1fr);
+      width: 100%;
       height: 50px;
       position:relative;
       z-index: 10;
-      justify-self: stretch;
-      justify-content: space-between;
       background-color: rgba(0, 3, 92, 0.3);
-      /* 첫 번째 li 요소에 스타일 적용 */
-      ul li:nth-child(1) {
-        width: 6rem;
+
+      ul:first-child li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 5rem;
       }
+
+      ul:last-child li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 10rem;
+        margin-top: 0.5rem;
+      }
+
     `;
 
     return(
@@ -21,11 +35,13 @@ export default function Header(){
             <Nav>
                 <ul>
                     <li>
-                        <img src={TilonImg} alt="로고" style={{width:'6rem', margin:'0.6rem'}}/>
+                        <img src={TilonImg} alt="로고" style={{width:'112px', margin:'0.6rem'}}/>
                     </li>
-                    {/*<li>*/}
-                    {/*    <button type="button" style={{width:'100px', margin:'20px 30px'}}>category</button>*/}
-                    {/*</li>*/}
+                </ul>
+                <ul>
+                    <li>
+                       <img src={viewday} alt="viewday" />
+                    </li>
                 </ul>
             </Nav>
         </>
