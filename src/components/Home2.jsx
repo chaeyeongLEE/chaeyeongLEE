@@ -111,9 +111,7 @@ export default function Home(){
         position: absolute;
         object-fit: fill;
         z-index: 0;
-        
       }
-
     `;
 
     const Div8 = styled.div`
@@ -158,8 +156,6 @@ export default function Home(){
       place-items: center;
   
       .CFImg{
-        //grid-template-rows: repeat(auto-fit, 1fr);
-        //grid-template-columns: repeat(auto-fill, 1fr);
         z-index: 2;
         position: absolute;
         object-fit: fill;
@@ -168,7 +164,7 @@ export default function Home(){
       }
 
       .CenterVerse {
-        margin-left: 19.688rem;
+        margin-left: 19rem;
         margin-top: 30rem;
       }
 
@@ -190,7 +186,7 @@ export default function Home(){
 
       .CVmessage2 {
         margin-top: 3rem;
-        line-height: 2.188rem;
+        line-height: 2.1rem;
         font-size: 1.5rem;
       }
       
@@ -202,7 +198,6 @@ export default function Home(){
       margin-left: 13.125rem;
       grid-row: 9;
       grid-column:1/4;
-      z-index: -100;
       place-items: center;
       
       .ABOUTTILON {
@@ -231,7 +226,6 @@ export default function Home(){
       position: relative;
       grid-row: 10;
       grid-column:1/4;
-      z-index: -100;
       `;
 
     //상담이 가능해요. FAQ
@@ -532,7 +526,7 @@ export default function Home(){
 
                 <div className="DstImg" style={{ marginTop: '9.375rem', position: 'static' }}>
                     <img src={dstMonitor} alt="Dstation Monitor" style={{ width: '70%', height: 'auto', marginLeft: '17.5rem', zIndex: '10', position: 'relative'}} />0
-                    <img src={black} alt="black backgroundimg" style={{ marginTop: '-31.25rem', zIndex: '-100', position: 'relative', paddingBottom:'12.5rem', width:'100%', height:'200px', backgroundColor:'black'}} />
+                    <img src={black} alt="black backgroundimg" style={{ marginTop: '-31.25rem', zIndex: '-10', position: 'relative', paddingBottom:'12.5rem', width:'100%', height:'200px', backgroundColor:'black'}} />
                 </div>
             </Div6>
             <Div7>

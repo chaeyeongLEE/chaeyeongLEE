@@ -14,6 +14,7 @@ export default function Footers(){
       background-color: black;
       color: #737373;
       row-gap: 30px;
+      position: relative;
       `;
 
     const Section1 = styled.section`
@@ -55,7 +56,9 @@ export default function Footers(){
         margin-top: 4rem;
         padding-left: 4rem;
         border-left: 1px solid #3A3A3C;
-        
+        position: relative;
+        z-index: 3;
+      
         ul li:nth-child(2) {
           margin-top: 1.5rem;
           position: relative;
@@ -78,7 +81,7 @@ export default function Footers(){
           display: none;
           position: absolute;
           background-color: #f9f9f9;
-          border-radius: 0.125rem;
+          border-radius: 0.3rem;
           min-width: 200px;
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           z-index: 1;
@@ -96,6 +99,7 @@ export default function Footers(){
     
         .drop-content a:hover {
           background-color: #ddd;
+          border-radius: 0.3rem;
         }
     
         ul li:nth-child(2) {
@@ -104,7 +108,8 @@ export default function Footers(){
           display: inline-block;
         }
 `
-
+    const blogUrl = "https://blog.naver.com/hitilon";
+    const youtubeUrl = "https://www.youtube.com/user/TilonCompany";
     return(
         <>
            <Footer>
@@ -160,7 +165,9 @@ export default function Footers(){
                            <li>Insight</li>
                            <li>뉴스레터</li>
                            <li>행사</li>
-                           <li>블로그<img src={open} alt="openpage" /></li>
+                           <li>
+                               <button onClick={()=>{window.open(blogUrl)}} style={{background:"none",border:"none", cursor:'pointer', color:'white'}}> 블로그 <img src={open} alt="openpage" /></button>
+                           </li>
                            <li>유튜브<img src={open} alt="openpage" /></li>
                        </div>
                    </ul>
@@ -191,17 +198,17 @@ export default function Footers(){
                <Section3>
                    <ul>
                        <li>
-                           <Link to="https://blog.naver.com/hitilon"> <img src={blog} alt="로고" /> </Link>
-                           <Link to="https://www.youtube.com/user/TilonCompany"> <img src={youtube} alt="로고" style={{marginRight:'1rem'}} /> </Link>
+                           <button onClick={()=>{window.open(blogUrl)}} style={{background:"none",border:"none", cursor:'pointer'}}> <img src={blog} alt="로고" /> </button>
+                           <button onClick={()=>{window.open(youtubeUrl)}} style={{background:"none",border:"none", cursor:'pointer'}}><img src={youtube} alt="로고" style={{marginRight:'1rem'}} /></button>
                        </li>
 
                        <li className="dropdown">
                            <button className="dropbtn"> 패밀리 사이트　　　　 ▽ </button>
                            <div className="drop-content">
-                               <a href="#">elcloud</a>
-                               <a href="#">KDaaS</a>
-                               <a href="#">Tilon Soft </a>
-                               <a href="#">CenterFace </a>
+                               <Link to="https://www.elcloud.com/"> elcloud </Link>
+                               <Link to="https://www.kdaas.com/"> KDaaS </Link>
+                               <Link to="http://tilonsoft.com/"> Tilon Soft </Link>
+                               <Link to="https://www.centerface.co.kr/main"> CenterFace </Link>
                            </div>
                        </li>
                    </ul>
