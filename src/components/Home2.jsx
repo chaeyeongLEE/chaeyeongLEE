@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import SliderCard from "./SliderCard";
 import Footers from "./Footers";
-
+import {Link} from 'react-router-dom';
 import DstImg from "../dstation.png";
 import EstImg from "../Estation.png";
 import IstImg from "../iStation.png";
@@ -538,14 +538,16 @@ export default function Home(){
             <Div7>
                 <Section5>
                     <div className="elcloud">
-                        <h1>elcloud.</h1>
+                        <h1> elcloud.2 </h1>
                     </div>
                     <div className="elText1">
                         <h1>견고한 이상의 <br /> 견고함.</h1>
                     </div>
                     <div className="elText2">
                         <h1>아름다운 전면 화면 상시표시형 디스플레이를 제작하는 데 <br /> 이 디스플레이는 견고하기까지 합니다. 두꺼운 앞면...</h1>
-                        <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> elcloud 바로가기  > </button>
+
+                        <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}>
+                            <Link to="https://www.tilon.com/cloud/el" style={{backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem', textDecoration:'none'}}> elcloud 바로가기  ></Link> </button>
                         <br />
                         <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> Google Play 방문하기 > </button>
                         <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', marginLeft:'4.5rem', fontWeight:'700'}}> App Store 방문하기 > </button>
@@ -578,6 +580,7 @@ export default function Home(){
                         VDI의 망 분리를 통한 보안 기능과 메신저 그룹 암호화 정책으로 안전한 커뮤니케이션을  <br />
                         제공하여 최상의 업무환경을 제공합니다. 언제, 어디서나, VDI 환경에서 유연한 협업  <br />
                         환경을 제공함과 동시에 쉽고 빠른 업무 공유와 원클릭 화상회의 환경을 만나보세요.</p> <br />
+
                     <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> CenterFace 소개서 다운로드 > </button>
                 </div>
             </Div8>
@@ -594,8 +597,8 @@ export default function Home(){
                         CenterVerse는 보안성이 강화된 업무 환경을 제공하고, 현실의 소프트웨어를 수정없이그대로 One Source,<br />
                         Multi-Use 형태로 제공되어 현실 세계의 모든 디지털 생활과 업무를메타버스 안에서 경험할 수 있습니다.<br />
                         지금 CenterVerse와 함께 하이퍼워크를 경험해보세요.</p>
-                    <button type="button" style={{border:'none', backgroundColor:'transparent', color:'#2997FF', fontWeight:'700', marginTop:'1.2rem'}}> 시연 영상 보러가기  </button>
-                    <img src={video} alt="videoicon" style={{marginBottom: '-0.5rem'}}/>
+                    <Link to="https://youtu.be/sK3pozGzQ9Q" style={{color:'#2997FF', fontWeight:'700', marginTop:'3rem', textDecoration:'none'}}>
+                    시연 영상 보러가기 <img src={video} alt="videoicon" style={{marginBottom: '-0.5rem'}}/> </Link>
                     <br />
                     <img src={cvimg} alt="centerverseimg" style={{marginTop:'5rem', width:'82%'}}/>
                 </div>

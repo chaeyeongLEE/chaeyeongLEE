@@ -37,6 +37,13 @@ body {
    margin-left: -240px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    margin-left: -400px;
+  }
+}
+
 ol, ul {
   list-style: none;
 }

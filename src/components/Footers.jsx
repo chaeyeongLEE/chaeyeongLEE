@@ -1,19 +1,22 @@
 import React, {Component} from 'react';
+
 import styled from "styled-components";
 import TilonImg2 from '../logo2.png';
 import youtube from '../youtube.png';
 import blog from '../blog.png';
 import open from '../opennew.png';
+import {Link} from "react-router-dom";
 export default function Footers(){
-    const Div = styled.div`
+    const Footer = styled.div`
       display: grid;
       grid-template-columns: repeat(1, 0.5fr 2.3fr 1fr);
       grid-template-rows: repeat(1, 2fr 1fr);
       background-color: black;
       color: #737373;
       row-gap: 30px;
-      
-      section1 {
+      `;
+
+    const Section1 = styled.section`
         grid-row: 1;
         grid-column: 2/3;
         line-height: 1.563rem;
@@ -22,16 +25,15 @@ export default function Footers(){
         display: flex;
         padding-right: 4rem;
         
-        
         ul li:nth-child(1) {
           color: white;
           font-weight: 700;
           font-size: large;
           margin-bottom: 1.2rem;
         }
-      }
+        `;
 
-      section2 {
+    const Section2 = styled.section`
         grid-row: 2;
         grid-column: 1/4;
         border-top: 1px solid #3A3A3C;
@@ -45,9 +47,9 @@ export default function Footers(){
           margin-top: 1.5rem;
           line-height: 1.375rem;
         }
-      }
+    `;
 
-      section3 {
+    const Section3 = styled.section`
         grid-row: 1;
         grid-column: 3/4;
         margin-top: 4rem;
@@ -59,7 +61,7 @@ export default function Footers(){
           position: relative;
           display: inline-block;
         }
-
+    
         .dropbtn {
           background-color: transparent;
           border-color: white;
@@ -71,7 +73,7 @@ export default function Footers(){
           font-size: 1rem;
           cursor: pointer;
         }
-
+    
         .drop-content {
           display: none;
           position: absolute;
@@ -81,47 +83,44 @@ export default function Footers(){
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           z-index: 1;
         }
-
-        .dropdown :hover .drop-content {
+        .dropdown:hover .drop-content {
           display: block;
         }
-
+    
         .drop-content a {
           display: block;
           padding: 12px 16px;
           text-decoration: none;
           color: #333;
         }
-
+    
         .drop-content a:hover {
           background-color: #ddd;
         }
-
+    
         ul li:nth-child(2) {
           margin-top: 1.5rem;
           position: relative;
           display: inline-block;
         }
-      }
-
-    `
+`
 
     return(
         <>
-           <Div>
-               <section1>
+           <Footer>
+               <Section1>
                     <ul>
                         <div className="company">
-                        <li>회사정보</li>
-                        <li>회사개요</li>
-                        <li>CEO 인사말</li>
-                        <li>연혁</li>
-                        <li>인증 및 수상</li>
-                        <li>윤리강령</li>
-                        <li>행동강령</li>
-                        <li>오시는길</li>
-                        <li style={{marginTop:'1.2rem',color:'#D1D1D6'}}>이용약관</li>
-                        <li style={{color:'#D1D1D6'}}>개인정보취급방침</li>
+                            <li>회사정보</li>
+                            <li>회사개요</li>
+                            <li>CEO 인사말</li>
+                            <li>연혁</li>
+                            <li>인증 및 수상</li>
+                            <li>윤리강령</li>
+                            <li>행동강령</li>
+                            <li>오시는길</li>
+                            <li style={{marginTop:'1.2rem',color:'#D1D1D6'}}>이용약관</li>
+                            <li style={{color:'#D1D1D6'}}>개인정보취급방침</li>
                         </div>
                     </ul>
                    <ul>
@@ -173,10 +172,9 @@ export default function Footers(){
                            <li>입사지원</li>
                        </div>
                    </ul>
-               </section1>
+               </Section1>
 
-                <section2>
-
+                <Section2>
                     <ul>
                         <li>
                             <img src={TilonImg2} alt="로고" />
@@ -188,27 +186,28 @@ export default function Footers(){
                             Copyright ⓒ TILON Co., Ltd. All Rights Reserved.
                         </li>
                     </ul>
-                </section2>
+                </Section2>
 
-               <section3>
+               <Section3>
                    <ul>
                        <li>
-                           <img src={youtube} alt="로고" style={{marginRight:'1rem'}} />
-                           <img src={blog} alt="로고" />
+                           <Link to="https://blog.naver.com/hitilon"> <img src={blog} alt="로고" /> </Link>
+                           <Link to="https://www.youtube.com/user/TilonCompany"> <img src={youtube} alt="로고" style={{marginRight:'1rem'}} /> </Link>
                        </li>
 
                        <li className="dropdown">
                            <button className="dropbtn"> 패밀리 사이트　　　　 ▽ </button>
                            <div className="drop-content">
-                               <a href="#">link 1</a>
-                               <a href="#">link 2</a>
-                               <a href="#">link 3</a>
+                               <a href="#">elcloud</a>
+                               <a href="#">KDaaS</a>
+                               <a href="#">Tilon Soft </a>
+                               <a href="#">CenterFace </a>
                            </div>
                        </li>
                    </ul>
-               </section3>
+               </Section3>
 
-           </Div>
+           </Footer>
 
         </>
     )
