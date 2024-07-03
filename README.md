@@ -3,7 +3,7 @@
  ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=안녕하세요,이채영입니다!👋&fontSize=50)
   
  <h3> 👋 Introduction </h3>
- <p>안녕하세요, 프론트 개발자 이채영입니다! </p>
+ <h5>안녕하세요, 프론트 개발자 이채영입니다! </h5>
 
  
 
@@ -17,8 +17,10 @@
 <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=TypeScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=React&logoColor=white"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=TypeScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=TypeScript&logoColor=white"/>
+<img src="https://img.shields.io/badge/vue.js-#4FC08D?style=flat&logo=TypeScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=TypeScript&logoColor=white"/>
+
+vuedotjs
  
 <h3>💡 Tools </h3>
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=white"/>
