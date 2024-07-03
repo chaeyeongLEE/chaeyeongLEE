@@ -3,8 +3,7 @@
  ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=안녕하세요,이채영입니다!👋&fontSize=50)
   
  <h3> 👋 Introduction </h3>
- <p>안녕하세요! 프론트 개발자로 나아가기위해 끊임없이 정진하고있습니다.
-<br /> 프론트와 백엔드 모두 관심있는 신입개발자입니다😊!</p>
+ <p>안녕하세요, 프론트 개발자 이채영입니다! </p>
 
  
 
