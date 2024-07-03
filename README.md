@@ -3,7 +3,7 @@
  ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=안녕하세요,이채영입니다!👋&fontSize=50)
   
  <h3> 👋 Introduction </h3>
- <h5>안녕하세요, 프론트 개발자 이채영입니다! </h5>
+ <h5>안녕하세요, 프론트 웹 개발자 이채영입니다! </h5>
 
  
 
@@ -23,14 +23,15 @@
  
 <h3>💡 Tools </h3>
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=white"/>
+<img src="https://img.shields.io/badge/webstorm-000000?style=flat&logo=Visual Studio&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
-<img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=Eclipse IDE&logoColor=white"/>
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Notion&logoColor=white"/>
 <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
- <h3> 📝 notion </h3>
- <P>https://ink-oregano-02e.notion.site/LEE-CHAE-YEONG-c5a1ba3a682c45ba98061f54ce521a8c</p>
+
  <h3> 📝 velog </h3>
  <P>https://velog.io/@yeongsday</p>
+ <h3> 📝 notion </h3>
+ <P>https://ink-oregano-02e.notion.site/LEE-CHAE-YEONG-c5a1ba3a682c45ba98061f54ce521a8c</p>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=footer)
 </div>
-
