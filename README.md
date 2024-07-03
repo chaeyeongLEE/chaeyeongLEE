@@ -13,14 +13,13 @@
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chaeyeongLEE&show_icons=true&theme=gotham) 
  
 <h3>📍Skill </h3>
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=TypeScript&logoColor=white"/>
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=React&logoColor=white"/>
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=TypeScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=TypeScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=TypeScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=React&logoColor=white"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=TypeScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/vue.js-#4FC08D?style=flat&logo=TypeScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=TypeScript&logoColor=white"/>
 
-vuedotjs
  
 <h3>💡 Tools </h3>
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=white"/>
